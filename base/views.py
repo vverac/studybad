@@ -20,4 +20,5 @@ def home(request):
 
 def room(request,pk):
     #return HttpResponse ("ROOM") 
-    return  render (request,'room.html')
+    #return  render (request,'room.html')
+    return  render (request,'base/room.html')
