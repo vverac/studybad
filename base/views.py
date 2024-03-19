@@ -15,8 +15,9 @@ def home(request):
     # return  render (request, 'home.html')
     # return  render (request, 'home.html', {'rooms': rooms})
     context = {'rooms': rooms}
-    return  render (request, 'home.html', context)
+    # return  render (request, 'home.html', context)
+    return  render (request, 'base/home.html', context)
 
-def room(request):
+def room(request,pk):
     #return HttpResponse ("ROOM") 
     return  render (request,'room.html')
