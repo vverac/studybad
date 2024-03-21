@@ -10,6 +10,8 @@
       {% comment %}
       <h5>{{room.id}} -- <a href="/room/{{room.id}}">{{ room.name }}</a></h5>
       {% endcomment %}
+      <a href="{% url 'update-room'  room.id %}">Edit</a>
+      <a href="{% url 'delete-room'  room.id %}">Delete</a>
       <span> @{{room.host.username}} </span><br />
       <h5>
         {{room.id}} -- <a href="{% url 'room' room.id %}">{{ room.name }}</a>
