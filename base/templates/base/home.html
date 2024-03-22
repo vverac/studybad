@@ -13,6 +13,13 @@
   <div>
     <h3>Browse Topic</h3>
     <hr />
+    {% for topic in topics %}
+
+    <div>
+      <a href="#">{{topic}}</a>
+    </div>
+
+    {% endfor %}
   </div>
   <div>
     <a href="{% url 'create-room'  %}">Create Room</a>
