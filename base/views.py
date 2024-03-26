@@ -12,6 +12,8 @@ from django.db.models  import Q
 #     {'id':3, 'name':'frontend developer'},
 # ]
 
+def loginpage(request):
+    return render(request,'base/login_register.html')
 
 def home(request):
     #return HttpResponse ("Home Page") 
